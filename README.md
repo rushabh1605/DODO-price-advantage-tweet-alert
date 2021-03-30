@@ -7,6 +7,10 @@ Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shu
 
 >Currently we are trying to fetch the price comparison data and track the fluctuations in price to create an alert.
 
+
+
+
+ **Team Details**
 - Rushabh Thakkar
 
 [Linkedin](https://www.linkedin.com/in/rushabhthakkar/)
