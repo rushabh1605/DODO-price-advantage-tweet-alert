@@ -8,6 +8,33 @@ Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shu
 
 **A Trading Bot that tracks DODO price advantage and tweets about it in real-time.**
 
+Inspiration
+>Blockchain is a revolutionary technology that is popularly known as the backbone of Digital Cryptocurrencies, which have been generating incredible hype in the last decade. Not working on blockchain and cryptocurrency would be like people who didn’t believe on the internet 2 decades back. 
+
+What it does
+>Our Twitter bot tracks DODO’s price advantage and tweets about it in real-time.
+
+How we built it
+>Firstly, we have made an Infura account and took credentials from there. We used API to fetch data from there. We made a code on python that fetches data. We made a Twitter account to use it as a bot. Then we made a code for the Twitter bot in which we had added ‘access token’ and ‘API keys’ for the account. By adding these files, we made a real-time Twitter bot using python.
+
+Challenges we ran into
+>Running the code on the cloud for 24/7
+>Finding contract address to fetch price data
+>Twitter Bot API credentials
+>Real time 
+
+Accomplishments that we're proud of
+>Fetched the exchange prices from chainlink and Dodo in real-time.
+>Successfully deployed Twitter Bot on Microsoft Azure Cloud Services to keep running 24/7
+
+What we learned
+>We have learned about Blockchain-based contracts.
+>Infura Platforms
+>Make a Twitter Bot
+>Learnt to deploy python code on Azure cloud services,
+
+What's next for Untitled
+To create and maintain a database and get an analytics dashboard
 
 
 
