@@ -6,8 +6,8 @@ Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shu
 
 # Our Project Name: Profiteren
 
+**A Trading Bot that tracks DODO price advantage and tweets about it in real-time.**
 
->Currently we are trying to fetch the price comparison data and track the fluctuations in price to create an alert.
 
 
 
