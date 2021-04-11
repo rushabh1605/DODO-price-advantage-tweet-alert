@@ -9,7 +9,7 @@ Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shu
 **A Trading Bot that tracks DODO price advantage and tweets about it in real-time.**
 
 <p align="center">
-  <img src=".profiteren.JPEG"/>
+  <img src="./profiteren.jpeg"/>
 </p>
 
 Inspiration
