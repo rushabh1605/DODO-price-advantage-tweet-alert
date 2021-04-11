@@ -40,7 +40,7 @@ What we learned
 What's next for Untitled
 To create and maintain a database and get an analytics dashboard
 
-Follow us on [Twitter Bot](https://twitter.com/_profiteren_)!
+Follow us on [Twitter](https://twitter.com/_profiteren_)
 
 
  **Team Details**
