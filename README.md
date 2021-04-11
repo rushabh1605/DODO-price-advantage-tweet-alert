@@ -4,7 +4,7 @@ We are team technophiles and participated in Chainlink Hackathon 2021. Our Probl
 
 Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shubham Vyas.
 
-Our Project Name: # Profiteren
+# Our Project Name: Profiteren
 
 
 >Currently we are trying to fetch the price comparison data and track the fluctuations in price to create an alert.
