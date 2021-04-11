@@ -8,6 +8,10 @@ Team Members: Rushabh Thakkar, Divy Patel, Denish Kalariya, Yug Thakkar, and Shu
 
 **A Trading Bot that tracks DODO price advantage and tweets about it in real-time.**
 
+<p align="center">
+  <img src="./technophileslogo.png"/>
+</p>
+
 Inspiration
 >Blockchain is a revolutionary technology that is popularly known as the backbone of Digital Cryptocurrencies, which have been generating incredible hype in the last decade. Not working on blockchain and cryptocurrency would be like people who didn’t believe on the internet 2 decades back. 
 
