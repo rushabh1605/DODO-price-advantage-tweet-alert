@@ -61,7 +61,9 @@ def getDodoPriceData(currencyPair, chain='mainnet'):
     key = [k for k in dodoAddresses if currencyPair.upper() in k]
     if not key:
         raise ValueError(f"COULD NOT FIND ADDRESS FOR CURRENCY PAIR {currencyPair.upper}")
+    time.sleep(0.9)
     addr = web3.toChecksumAddress(dodoAddresses[key[0]])
+    time.sleep(0.9)
     contract = web3.eth.contract(address=addr, abi=abi)
     midprice = contract.functions.getMidPrice().call()
     expectedTarget = contract.functions.getExpectedTarget().call()[1]
@@ -82,6 +84,7 @@ def getChainlinkPriceData(currencyPair, chain='mainnet'):
     endpoint = getEndpoint(chain)
     web3 = Web3(Web3.HTTPProvider(endpoint))  
     #first, calculate the USDC to USD rate:
+    time.sleep(0.9)
     usdcTOusd = web3.eth.contract(address='0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6',abi=abi).functions.latestRoundData().call()[1] / 1E8
     #then, convert to USD to USDC by inverting:
     usdTOusdc = 1/usdcTOusd
@@ -103,6 +106,7 @@ def getChainlinkPriceData(currencyPair, chain='mainnet'):
     if key not in chainlinkAddresses:
         raise ValueError(f'INVALID INPUT CURRENCY PAIR {currencyPair.upper()}')
     address = chainlinkAddresses[key]
+    time.sleep(0.9)
     contract = web3.eth.contract(address=address, abi=abi)
     roundData = contract.functions.latestRoundData().call()
     price = roundData[1] * usdTOusdc
@@ -151,7 +155,6 @@ def queryAllPricesDodoAndChainlink(chain='mainnet'):
                      'USDT-USDC']
     results = {}
     for currencyPair in currencyPairs:
-        time.sleep(0.9)
         results[currencyPair] = getDODOandChainlinkPriceData(currencyPair,chain=chain)
     return results
 
