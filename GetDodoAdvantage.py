@@ -6,6 +6,7 @@ Created on Wed Apr  7 21:55:53 2021
 """
 
 from web3 import Web3
+import time
 
 g_currencyPairs = ['WETH-USDC',
  'LINK-USDC',
@@ -150,6 +151,7 @@ def queryAllPricesDodoAndChainlink(chain='mainnet'):
                      'USDT-USDC']
     results = {}
     for currencyPair in currencyPairs:
+        time.sleep(0.9)
         results[currencyPair] = getDODOandChainlinkPriceData(currencyPair,chain=chain)
     return results
 

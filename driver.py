@@ -8,8 +8,7 @@ from datetime import datetime
 import GetDodoAdvantage as GDA
 import bot_log as log
 import twitter_bot as TB
-
-x = GDA.queryAllPricesDodoAndChainlink()
+import time
 
 advantageThreshold = 0
 
@@ -30,6 +29,8 @@ flag = True
 
 try:
     while flag:
+        # time.sleep(0.9)
+        x = GDA.queryAllPricesDodoAndChainlink()
         for each in currencyPairs :
             currencyPair = each
             percentage = x[each]["dodopriceedgepercentage"]
@@ -40,6 +41,7 @@ try:
             if percentage>advantageThreshold:
             # if True:
                     try:
+                        time.sleep(0.01)
                         tweetText = TB.postPriceEdge(currencyPair, percentage, chainlinkPrice, dodoPrice, chainlinktimestamp)
                         log.logtocsv(filename, datetime.now(), each, "")
                         # print(f"{currencyPair} TWEET SUCCESFULL")
