@@ -51,7 +51,7 @@ Follow us on [Twitter](https://twitter.com/_profiteren_)
 
 - Divy Patel
 
-[Linkedin](www.linkedin.com/in/divy-patel-7b369118b)
+[Linkedin](www.linkedin.com/in/divy-patel-7b369118b/)
 [Github](https://github.com/Divy2000)
 
 - Denish Kalariya
